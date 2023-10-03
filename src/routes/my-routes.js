@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 //my pages
 import Home from "../components/home-page/home";
@@ -7,15 +7,17 @@ import KnowMore from "../components/know-more/knowMore";
 import Plans from "../components/plans/plans"
 import Contact from "../components/contact/contact";
 
-const Routes = () => {
+const MyRoutes = () => {
   return (
     <Router>
-      <Route exact path="/alexia-app/src/components/home-page/home.js" component={Home}  />
-      <Route path="/alexia-app/src/components/know-more/knowMore.js" component={KnowMore} />
-      <Route path="/alexia-app/src/components/plans/plans.js" component={Plans} />
-      <Route Component={Contact}  />
+      <Routes>
+        <Route path="/" element={<Home/>} />  
+        <Route path="/knowMore" element={<KnowMore/>} />  
+        <Route path="/plans" element={<Plans/>} />  
+        <Route path="/contact" element={<Contact/>} />  
+      </Routes>
     </Router>
   )
 }
 
-export default Routes;
+export default MyRoutes;
