@@ -1,12 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import {
-  HomeNavbar,
-  KnowMore,
-  OurPlans,
-  Contact,
   PlansTitle,
   PlansSubtitle,
   SinglePlanContainer,
@@ -23,22 +17,13 @@ import {
 } from "./plans.styles";
 
 import lines from '../../assets/10.png'
+import Navbar from "../navbar/navbar";
 
 
 function Plans() {
   return (
     <>
-      <HomeNavbar>
-        <Link style={{ textDecoration: "none" }} to="/knowMore">
-          <KnowMore>Saiba mais</KnowMore>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/plans">
-          <OurPlans>Planos</OurPlans>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/contact">
-          <Contact>Contato</Contact>
-        </Link>
-      </HomeNavbar>
+      <Navbar/>
       <PlansTitle>Planos</PlansTitle>
       <PlansSubtitle>
         AlexIA tem diversos planos para atender seus clientes, escolha o mais

@@ -1,12 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import {
-  HomeNavbar,
-  KnowMore,
-  Plans,
-  Contact,
   HomeHeader,
   PageUnderline,
   HomeHeaderText,
@@ -46,20 +40,12 @@ import faceIcon from "../../assets/facebook.png";
 import InstaIcon from "../../assets/instagram.png";
 import lines from '../../assets/10.png'
 
+import Navbar from "../navbar/navbar";
+
 function home() {
   return (
     <>
-      <HomeNavbar>
-        <Link style={{textDecoration:'none'}} to="/knowMore">
-          <KnowMore>Saiba mais</KnowMore>
-        </Link>
-        <Link style={{textDecoration:'none'}} to="/plans">
-          <Plans>Planos</Plans>
-        </Link>
-        <Link style={{textDecoration:'none'}} to="/contact">
-          <Contact>Contato</Contact>
-        </Link>
-      </HomeNavbar>
+      <Navbar/>
       <HomeHeader>
         <HomeHeaderText>
           <HomeHeaderTitle>
