@@ -11,13 +11,11 @@ import {
   SinglePlanDescription,
   SinglePlanBtn,
   SinglePlanPrice,
-  HomeFooter,
-  HomeFooterIcon,
-  HomeFooterCopyright
 } from "./plans.styles";
 
 import lines from '../../assets/10.png'
 import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
 
 
 function Plans() {
@@ -64,12 +62,7 @@ function Plans() {
           </SinglePlanPriceBox>
         </SinglePlan>
       </SinglePlanContainer>
-      <HomeFooter>
-        <HomeFooterIcon src={lines}></HomeFooterIcon>
-        <HomeFooterCopyright>
-          Direitos autorais AlexIA Plataforma de Saúde
-        </HomeFooterCopyright>
-      </HomeFooter>
+      <Footer/>
     </>
   );
 }

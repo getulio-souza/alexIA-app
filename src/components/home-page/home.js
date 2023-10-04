@@ -29,18 +29,14 @@ import {
   HomeNewsletterSocialMedia,
   InstagramIcon,
   FacebookIcon,
-  HomeFooter,
-  HomeFooterIcon,
-  HomeFooterCopyright,
 } from "./home.styles";
 
 import alexia from "../../assets/ia-second-example.jpg";
 import pacientAndDoctor from "../../assets/patient-and-doctor.jpg";
 import faceIcon from "../../assets/facebook.png";
 import InstaIcon from "../../assets/instagram.png";
-import lines from '../../assets/10.png'
-
 import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
 
 function home() {
   return (
@@ -151,12 +147,7 @@ function home() {
           <FacebookIcon src={faceIcon}></FacebookIcon>
         </HomeNewsletterSocialMedia>
       </HomeNewsletter>
-      <HomeFooter>
-        <HomeFooterIcon src={lines}></HomeFooterIcon>
-        <HomeFooterCopyright>
-          Direitos autorais AlexIA Plataforma de Saúde
-        </HomeFooterCopyright>
-      </HomeFooter>
+      <Footer/>
     </>
   );
 }
