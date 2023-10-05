@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../components/home-page/home";
 import KnowMore from "../components/know-more/knowMore";
 import Plans from "../components/plans/plans"
+import BasicPlan from "../components/plans/basic/basicPlan";
 import Contact from "../components/contact/contact";
 
 const MyRoutes = () => {
@@ -14,6 +15,7 @@ const MyRoutes = () => {
         <Route path="/" element={<Home/>} />  
         <Route path="/knowMore" element={<KnowMore/>} />  
         <Route path="/plans" element={<Plans/>} />  
+        <Route path="/plans/basic" element={<BasicPlan/>} />  
         <Route path="/contact" element={<Contact/>} />  
       </Routes>
     </Router>
