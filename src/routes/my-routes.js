@@ -7,6 +7,7 @@ import KnowMore from "../components/know-more/knowMore";
 import Plans from "../components/plans/plans"
 import BasicPlan from "../components/plans/basic/basicPlan";
 import Contact from "../components/contact/contact";
+import Newcreditcard from "../components/newcreditcard/newcreditcard";
 
 const MyRoutes = () => {
   return (
@@ -16,7 +17,8 @@ const MyRoutes = () => {
         <Route path="/knowMore" element={<KnowMore/>} />  
         <Route path="/plans" element={<Plans/>} />  
         <Route path="/plans/basic" element={<BasicPlan/>} />  
-        <Route path="/contact" element={<Contact/>} />  
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/newcreditcard" element={<Newcreditcard/>} />
       </Routes>
     </Router>
   )
