@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 
 import {
   ContactNavbar,
-  KnowMore,
-  Plans,
-  Contact,
   ContactHeaderText,
   ContactHeaderTitle,
   InstagramTitle,
@@ -17,30 +14,18 @@ import {
   ContactNewsletterTitle,
   ContactSuggestionBtn,
   ContactFooter,
-  ContactFooterIcon,
-  ContactFooterCopyright,
   ContactFooterEmail,
 } from "./contact.styles";
 
 import postInsta from "../../assets/postagem.png";
 import Footer from "../footer/footer";
+import Navbar from "../navbar/navbar";
 
 function contact() {
   return (
     <>
-      <ContactNavbar>
-        <Link style={{ textDecoration: 'none' }} to="/knowMore">
-          <KnowMore>Saiba mais</KnowMore>
-        </Link>
-        <Link style={{ textDecoration: 'none' }} to="/plans">
-          <Plans>Planos</Plans>
-        </Link>
-        <Link style={{ textDecoration: 'none' }} to="/contact">
-          <Contact>Contato</Contact>
-        </Link>
-      </ContactNavbar>
-
-
+      <Navbar/>
+      
       <ContactHeaderText>
         <ContactHeaderTitle>
           Nosso canais de comunicação
