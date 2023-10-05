@@ -1,67 +1,58 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import {
-  ContactNavbar,
-  KnowMore,
-  Plans,
-  Contact,
   ContactHeaderText,
   ContactHeaderTitle,
-  InstagramTitle,
+  PostsTitle,
   ContactQuestions,
   PostInstaContainer,
   InstagramPost,
+  InstagramPostTitle,
+  InstagramPostIcon,
   ContactNewsletter,
   ContactNewsletterTitle,
   ContactSuggestionBtn,
   ContactFooter,
-  ContactFooterIcon,
-  ContactFooterCopyright,
   ContactFooterEmail,
+  ContactFooterEmailInfo,
 } from "./contact.styles";
 
-import postInsta from "../../assets/postagem.png";
 import Footer from "../footer/footer";
+import Navbar from "../../components/navbar/navbar";
+
+import icon1 from '../../assets/relatorio-medico.png'
+import icon2 from '../../assets/batimento-cardiaco.png'
+import icon3 from '../../assets/medicina-alternativa.png'
 
 function contact() {
   return (
     <>
-      <ContactNavbar>
-        <Link style={{ textDecoration: 'none' }} to="/knowMore">
-          <KnowMore>Saiba mais</KnowMore>
-        </Link>
-        <Link style={{ textDecoration: 'none' }} to="/plans">
-          <Plans>Planos</Plans>
-        </Link>
-        <Link style={{ textDecoration: 'none' }} to="/contact">
-          <Contact>Contato</Contact>
-        </Link>
-      </ContactNavbar>
-
-
+      <Navbar />
       <ContactHeaderText>
-        <ContactHeaderTitle>
-          Nosso canais de comunicação
-        </ContactHeaderTitle>
+        <ContactHeaderTitle>Nossos canais de comunicação</ContactHeaderTitle>
       </ContactHeaderText>
-
-
       <ContactQuestions>
-        <InstagramTitle>Instagram</InstagramTitle>
+        <PostsTitle>Ultimos posts</PostsTitle>
         <PostInstaContainer>
           <InstagramPost>
-            <img src={postInsta} alt="Postagem do Instagram da AlexIA" />
-
+            <InstagramPostTitle>
+              Como a AlexIA pode revolucionar a triagem
+            </InstagramPostTitle>
+            <InstagramPostIcon src={icon1}></InstagramPostIcon>
           </InstagramPost>
-          <InstagramPost>
-            <img src={postInsta} alt="Postagem do Instagram da AlexIA" />
 
+          <InstagramPost>
+            <InstagramPostTitle>
+              Como a AlexIA pode revolucionar a triagem
+            </InstagramPostTitle>
+            <InstagramPostIcon src={icon2}></InstagramPostIcon>
           </InstagramPost>
-          <InstagramPost>
-            <img src={postInsta} alt="Postagem do Instagram da AlexIA" />
 
+          <InstagramPost>
+            <InstagramPostTitle>
+              Como a AlexIA pode revolucionar a triagem
+            </InstagramPostTitle>
+            <InstagramPostIcon src={icon3}></InstagramPostIcon>
           </InstagramPost>
         </PostInstaContainer>
       </ContactQuestions>
@@ -74,13 +65,11 @@ function contact() {
       </ContactNewsletter>
 
       <ContactFooter>
-        <ContactFooterEmail>
-          suporte@alexia.com.br
-        </ContactFooterEmail>
-      <Footer/>
+        <ContactFooterEmail>E-mail:</ContactFooterEmail>
+        <ContactFooterEmailInfo>suporte@alexia.com.br</ContactFooterEmailInfo>
+        <Footer />
       </ContactFooter>
     </>
-
   );
 }
 

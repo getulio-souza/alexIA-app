@@ -1,51 +1,9 @@
 import styled from 'styled-components'
 
-export const ContactNavbar = styled.div`
-  background-color: #1E1E1E;
-  width: 639px;
-  height: 61px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 20px;
-  border-radius:15px;
-`;
-
-export const KnowMore = styled.h3`
-  font-size:24px;
-  color: #fff;
-  cursor: pointer;
-  transition: .5s;
-  &:hover{
-    opacity:0.8;
-  }
-`
-export const Plans = styled.h3`
-  font-size:24px;
-  color: #fff;
-  cursor: pointer;
-  transition: .5s;
-  &:hover{
-    opacity:0.8;
-  }
-`
-export const Contact = styled.h3`
-  font-size:24px;
-  color: #fff;
-  cursor: pointer;
-  transition: .5s;
-  &:hover{
-    opacity:0.8;
-  }
-`
-
 export const ContactHeaderText = styled.div`
   margin:150px;
   display: flex;
   justify-content:center;
-  
-
 `;
 
 export const ContactHeaderTitle = styled.h2`
@@ -61,24 +19,33 @@ export const ContactQuestions = styled.div`
   padding:40px;
   margin: 100px 0%
 `;
-export const InstagramTitle = styled.h2`
-  margin:0px 0px 50px 200px;
-  text-decoration: underline;
+export const PostsTitle = styled.h1`
+  text-align:center;
+  padding-bottom:20px;
 `;
+
 export const PostInstaContainer = styled.div`
   display:flex;
   justify-content:space-evenly;
 `;
 
 export const InstagramPost = styled.div`
-margin: 0px -100px
+  border: 1px solid #000;
+  width:200px;
+  height:200px;
+  box-shadow: 1px 2px 3px #000;
 `;
 
-export const InstagramImg = styled.div`
+export const InstagramPostTitle = styled.h4`
+  padding:20px 40px 20px 20px;
+`
+export const InstagramPostIcon = styled.img`
+  width:30px;
+  padding-left:20px;
 `;
 
 export const ContactNewsletter = styled.div`
-  padding:40px;
+  padding:40px 0px 60px 0px;
   text-align:center;
   display:flex;
   flex-direction:column;
@@ -97,16 +64,14 @@ export const ContactNewsletterInfo = styled.p`
   padding-bottom:20px;
 `;
 
-
 export const ContactSuggestionBtn = styled.button`
   border:none;
   background-color:#1F1F1F;
   color:#fff;
-  width: 15%;
-  padding:20px;
+  width: 20%;
+  height:40px;
   margin: 0 auto;
   margin-top:20px;
-  margin-bottom:200px;
   border-radius: 10px;
   font-size:20px;
   cursor:pointer;
@@ -132,9 +97,15 @@ export const ContactFooter = styled.div`
 
 export const ContactFooterIcon = styled.div`
 `;
-export const ContactFooterCopyright = styled.p`
-  color: white;
-  `;
-  export const ContactFooterEmail = styled.h1`
 
+export const ContactFooterCopyright = styled.p`
+  color: #fff;
+`;
+
+export const ContactFooterEmail = styled.h3`
+
+`;
+
+export const ContactFooterEmailInfo = styled.p`
+  font-weight:500;
 `;
