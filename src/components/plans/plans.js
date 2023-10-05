@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import {
   PlansTitle,
   PlansSubtitle,
@@ -13,7 +15,6 @@ import {
   SinglePlanPrice,
 } from "./plans.styles";
 
-import lines from '../../assets/10.png'
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 
@@ -32,7 +33,9 @@ function Plans() {
           <SinglePlanBox>
             <SinglePlanTitle>Plano Basic</SinglePlanTitle>
             <SinglePlanDescription>O plano Basic te dá as funcionalidades fundamentais de AlexIA, é possível fazer triagens gerais, com um tempo maior de espera, é ideal para quem quer testar o produto sem investir tanto.</SinglePlanDescription>
+            <Link to="/plans/basic">
             <SinglePlanBtn>Saiba mais</SinglePlanBtn>
+            </Link>
           </SinglePlanBox>
           <SinglePlanPriceBox>
             <SinglePlanPrice>R$</SinglePlanPrice>
