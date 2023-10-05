@@ -11,8 +11,12 @@ export const PlansSubtitle = styled.h6`
   text-align:center;
   min-width:30%;
   width:30%;
-  max-width:30%;
+  max-width:50%;
   margin:0 auto;
+  font-size: 12px;
+  @media(max-width:900px){
+    width:100%;
+  }
 `;
 
 export const SinglePlanContainer = styled.div`
@@ -25,6 +29,8 @@ export const SinglePlanContainer = styled.div`
 
 export const SinglePlan = styled.div`
   width: 50%;
+  max-width:50%;
+  min-width:50%;
   margin: 0 auto;
   display: flex;
   align-items:center;
@@ -35,11 +41,18 @@ export const SinglePlan = styled.div`
 
 export const SinglePlanBox = styled.div`
   padding: 20px;
+  @media(max-width:900px){
+    text-align:center;
+  }
 `;
 
 export const SinglePlanTitle = styled.h3``;
+
 export const SinglePlanDescription = styled.p`
   width:60%;
+  @media(max-width:900px){
+    width:100%;
+  }
 `;
 export const SinglePlanBtn = styled.button`
   border: none;
@@ -59,6 +72,9 @@ export const SinglePlanPriceBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items:center;
+  @media(max-width:900px){
+    display:none;
+  }
 `
 
 export const SinglePlanPrice = styled.div`

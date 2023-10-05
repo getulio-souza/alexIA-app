@@ -11,7 +11,7 @@ export const HomeNavbar = styled.div`
   margin-top: 20px;
   border-radius:15px;
   @media(max-width:900px){
-    width: 400px;
+    width: 350px;
   }
 `;
 
