@@ -5,15 +5,26 @@ export const HomeHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  @media(max-width:900px){
+    display: flex;
+    flex-direction:column;
+  }
 `;
 
 export const HomeHeaderText = styled.div`
   width:50%;
+  @media(max-width:900px){
+    width:70%;
+    text-align:center;
+  }
 `;
 
 export const HomeHeaderTitle = styled.h2`
   font-size:40px;
   color:#1E1E1E;
+  @media(max-width:900px){
+  font-size:33px;
+  }
 `;
 
 export const HomeHeaderDescription = styled.h4`
@@ -39,13 +50,20 @@ export const SingleBenefit = styled.div`
   display:flex;
   justify-content: center;
   padding:40px;
-  /* border:1px solid #000; */
+  @media(max-width:900px){
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+  }
 `;
 
 export const SingleBenefitText = styled.div`
   width:30%;
   padding: 40px;
-
+  @media(max-width:900px){
+  width:50%;
+  text-align: center;
+  }
 `;
 
 export const SingleBenefitTitle = styled.h3``;
@@ -57,6 +75,9 @@ export const SingleBenefitImgBox = styled.div``
 export const SingleBenefitImg = styled.img`
   width: 30%;
   height: 30%;
+  @media(max-width:900px){
+  width:60%;
+  }
 `;
 
 export const HomeQuestions = styled.div`
@@ -70,10 +91,20 @@ export const HomeQuestionsContainer = styled.div`
   display:flex;
   justify-content:space-evenly;
   gap:30px;
+  @media(max-width:900px){
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+  }
 `;
 
 export const SingleHomeQuestion = styled.div`
   width:25%;
+  @media(max-width:900px){
+    width: 50%;
+    text-align: center;
+  }
+  
 `;
 export const SingleHomeQuestionTitle = styled.h3``;
 export const SingleHomeQuestionText = styled.p``;
@@ -89,6 +120,9 @@ export const HomeNewsletterTitle = styled.h2`
   width:28%;
   margin: 0 auto;
   padding-bottom:20px;
+  @media(max-width:900px){
+    width:50%;
+  }
 `;
 
 export const HomeNewsletterInfo = styled.p`
@@ -108,6 +142,9 @@ export const HomeNewsletterEmailInput = styled.input`
   font-size: 20px;
   padding-left:2%;
   text-align:center;
+  @media(max-width:900px){
+    width:60%;
+  }
 `;
 
 export const HomeNewsletterSubscribeBtn = styled.button`
@@ -123,6 +160,9 @@ export const HomeNewsletterSubscribeBtn = styled.button`
   transition: 0.5s;;
   &:hover{
     opacity:0.9;
+  }
+  @media(max-width:900px){
+    width:50%;
   }
 `;
 

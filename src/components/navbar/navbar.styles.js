@@ -10,6 +10,9 @@ export const HomeNavbar = styled.div`
   margin: 0 auto;
   margin-top: 20px;
   border-radius:15px;
+  @media(max-width:900px){
+    width: 400px;
+  }
 `;
 
 export const KnowMore = styled.h3`
@@ -20,6 +23,9 @@ export const KnowMore = styled.h3`
   &:hover{
     opacity:0.8;
   }
+  @media(max-width:900px){
+    font-size:20px;
+  }
 `;
 export const Plans = styled.h3`
   font-size:24px;
@@ -29,6 +35,9 @@ export const Plans = styled.h3`
   &:hover{
     opacity:0.8;
   }
+  @media(max-width:900px){
+    font-size:20px;
+  }
 `;
 export const Contact = styled.h3`
   font-size:24px;
@@ -37,5 +46,8 @@ export const Contact = styled.h3`
   transition: .5s;
   &:hover{
     opacity:0.8;
+  }
+  @media(max-width:900px){
+    font-size:20px;
   }
 `;
