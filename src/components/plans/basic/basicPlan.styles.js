@@ -28,6 +28,10 @@ export const SinglePlan = styled.div`
   align-items:center;
   border: 1px solid #000;
   padding: 20px;
+  @media(max-width:900px){
+    display:block;
+    text-align:center;
+  }
 `;
 
 export const SinglePlanBox = styled.div`
@@ -35,9 +39,14 @@ export const SinglePlanBox = styled.div`
 `;
 
 export const SinglePlanTitle = styled.h3``;
+
 export const SinglePlanDescription = styled.p`
   width:60%;
+  @media(max-width:900px){
+    width:100%;
+  }
 `;
+
 export const SinglePlanBtn = styled.button`
   border: none;
   background-color: #000;

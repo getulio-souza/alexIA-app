@@ -12,8 +12,8 @@ function Navbar() {
   return (
     <>
     <HomeNavbar>
-        <Link style={{textDecoration:'none'}} to="/knowMore">
-          <KnowMore>Saiba mais</KnowMore>
+        <Link style={{textDecoration:'none'}} to="/">
+          <KnowMore>Home</KnowMore>
         </Link>
         <Link style={{textDecoration:'none'}} to="/plans">
           <Plans>Planos</Plans>

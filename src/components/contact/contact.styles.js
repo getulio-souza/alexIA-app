@@ -12,13 +12,13 @@ export const ContactHeaderTitle = styled.h2`
   border: 2px solid black;
   padding: 50px;
   text-align: center;
-  width:30%;
 `;
 
 export const ContactQuestions = styled.div`
   padding:40px;
   margin: 100px 0%
 `;
+
 export const PostsTitle = styled.h1`
   text-align:center;
   padding-bottom:20px;
@@ -27,6 +27,11 @@ export const PostsTitle = styled.h1`
 export const PostInstaContainer = styled.div`
   display:flex;
   justify-content:space-evenly;
+  @media(max-width:900px){
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 `;
 
 export const InstagramPost = styled.div`
@@ -68,8 +73,7 @@ export const ContactSuggestionBtn = styled.button`
   border:none;
   background-color:#1F1F1F;
   color:#fff;
-  width: 20%;
-  height:40px;
+  padding:10px 25px;
   margin: 0 auto;
   margin-top:20px;
   border-radius: 10px;
