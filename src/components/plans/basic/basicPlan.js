@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   PlansTitle,
@@ -21,10 +21,33 @@ import {
   PlanConfirmBtn
 } from "./basicPlan.styles";
 
-
 import Navbar from "../../navbar/navbar";
 
 function BasicPlan() {
+
+  //logic to validate email
+  const [email, setEmail] = useState('');
+  const [isValid, setIsValid] = useState(true);
+
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setEmail(inputValue);
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setIsValid(emailRegex.test(inputValue));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  if (isValid) {
+    console.log('Email is valid', email)
+  } else {
+    console.log('invalid email')
+  }
+
+
   return (
     <>
       <Navbar/>
@@ -43,17 +66,21 @@ function BasicPlan() {
           <SinglePlanPrice>299.90</SinglePlanPrice>
         </SinglePlanPriceBox>
       </SinglePlan>
-      <PlanUserInfo>
+      <PlanUserInfo onSubmit={handleSubmit}>
         <PlanUserEmail>
           <PlanUserLabel>E-mail</PlanUserLabel>
           <PlanUserInput
             type="email"
+            value={email}
+            onChange={handleInputChange}
+            placeholder="fulano_de_tal@gmail.com"
           ></PlanUserInput>
         </PlanUserEmail>
         <PlanUserCNPJ>
         <PlanUserLabel>CNPJ</PlanUserLabel>
           <PlanUserInput
             maxLength={14}
+            placeholder="000.000.000/0000-00"
           ></PlanUserInput>
         </PlanUserCNPJ>
         <PlanUserPayment>

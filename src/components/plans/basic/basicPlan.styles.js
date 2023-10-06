@@ -72,7 +72,7 @@ export const SinglePlanPrice = styled.div`
   font-size:30px
 `;
 
-export const PlanUserInfo = styled.div`
+export const PlanUserInfo = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
