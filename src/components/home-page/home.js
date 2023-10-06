@@ -1,19 +1,20 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import {
   HomeHeader,
+  HomeHeaderButton,
   PageUnderline,
   HomeHeaderText,
   HomeHeaderTitle,
   HomeHeaderDescription,
   HomeHeaderImg,
   HomeBenefits,
-  // GenericBorder,
   SingleBenefit,
   SingleBenefitText,
   SingleBenefitTitle,
   SingleBenefitDescription,
-  // SingleBenefitImgBox,
   SingleBenefitImg,
   HomeQuestions,
   HomeQuestionsTitle,
@@ -54,6 +55,9 @@ function home() {
             diretamente com seus clientes, usuário de planos de saúde, e fazer a
             triagem de acordo com base nas informações fornecidas no chat.
           </HomeHeaderDescription>
+          <Link to="/chatBot-demo">
+          <HomeHeaderButton>Teste a demo</HomeHeaderButton>
+          </Link>
         </HomeHeaderText>
         <HomeHeaderImg src={alexia}></HomeHeaderImg>
       </HomeHeader>

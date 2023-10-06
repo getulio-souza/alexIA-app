@@ -11,6 +11,26 @@ export const HomeHeader = styled.div`
   }
 `;
 
+export const HomeHeaderButton = styled.button`
+  border:none;
+  background-color:#1F1F1F;
+  color:#fff;
+  width: 30%;
+  height:40px;
+  margin: 0 auto;
+  margin-top:20px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 0.5s;;
+  &:hover{
+    opacity:0.9;
+  }
+  @media(max-width:900px){
+    width:100%;
+    margin-bottom:20px;
+  }
+`;
+
 export const HomeHeaderText = styled.div`
   width:50%;
   @media(max-width:900px){
