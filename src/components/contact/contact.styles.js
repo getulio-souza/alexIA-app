@@ -112,4 +112,5 @@ export const ContactFooterEmail = styled.h3`
 
 export const ContactFooterEmailInfo = styled.p`
   font-weight:500;
+  text-decoration:underline;
 `;

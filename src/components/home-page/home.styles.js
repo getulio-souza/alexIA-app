@@ -69,6 +69,7 @@ export const GenericBorder = styled.div``;
 export const SingleBenefit = styled.div`
   display:flex;
   justify-content: center;
+  align-items:center;
   padding:40px;
   @media(max-width:900px){
     display: flex;

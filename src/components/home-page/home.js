@@ -33,7 +33,9 @@ import {
 } from "./home.styles";
 
 import alexia from "../../assets/ia-second-example.jpg";
-import pacientAndDoctor from "../../assets/patient-and-doctor.jpg";
+import pacientAndDoctor from "../../assets/chat-IA.jpg";
+import IAiamge from "../../assets/IA-1160x680.jpg";
+import IAiamge1 from "../../assets/IA-e-medicina.jpg";
 import faceIcon from "../../assets/facebook.png";
 import InstaIcon from "../../assets/instagram.png";
 import Navbar from "../navbar/navbar";
@@ -86,7 +88,7 @@ function home() {
               assertividade.
             </SingleBenefitDescription>
           </SingleBenefitText>
-          <SingleBenefitImg src={pacientAndDoctor}></SingleBenefitImg>
+          <SingleBenefitImg src={IAiamge}></SingleBenefitImg>
         </SingleBenefit>
         <SingleBenefit>
           <SingleBenefitText>
@@ -97,7 +99,7 @@ function home() {
               precisos e eficientes.
             </SingleBenefitDescription>
           </SingleBenefitText>
-          <SingleBenefitImg src={pacientAndDoctor}></SingleBenefitImg>
+          <SingleBenefitImg src={IAiamge1}></SingleBenefitImg>
         </SingleBenefit>
       </HomeBenefits>
       <PageUnderline></PageUnderline>
@@ -144,11 +146,15 @@ function home() {
           Se inscreva em nossa newsletter e receba as noticias mais recentes
           sobre AlexIA
         </HomeNewsletterInfo>
-        <HomeNewsletterEmailInput></HomeNewsletterEmailInput>
+        <HomeNewsletterEmailInput placeholder="Digite seu e-mail"></HomeNewsletterEmailInput>
         <HomeNewsletterSubscribeBtn>Inscrever-se</HomeNewsletterSubscribeBtn>
         <HomeNewsletterSocialMedia>
+          <Link to="https://www.instagram.com/" target="_blank">
           <InstagramIcon src={InstaIcon}></InstagramIcon>
+          </Link>
+          <Link to="https://www.facebook.com/" target="_blank">
           <FacebookIcon src={faceIcon}></FacebookIcon>
+          </Link>
         </HomeNewsletterSocialMedia>
       </HomeNewsletter>
       <Footer/>
