@@ -4,81 +4,86 @@ import { Link } from "react-router-dom";
 
 import {
   PlansTitle,
+  PlansTitleContainer,
+  CvvInput,
   CreditCardArea,
   CardNumberContainer,
   CardProcessLabel,
   CardUserInput,
   CardNameContainer,
-  CvvOption,
+  InputWrapper,
   PlanUserPayment,
   PlanUserCreditCardTitle,
   PlanUserCreditCardSelect,
-  PlanUserPaymentPortion,
-  PlanUserPortionOption,
+  InfContainers,
   PlanConfirmBtn
 } from "./newcreditcard.styles";
 
 import Navbar from "../navbar/navbar";
+import Footer from "../footer/footer";
 
 function newcreditcard() {
 
-  
+
   return (
     <>
-    <Navbar/>
-    
-      <PlansTitle>Adicionar novo Cartão</PlansTitle>
+      <Navbar />
+
+      <PlansTitleContainer>
+        <PlansTitle>Adicionar novo Cartão</PlansTitle>
+      </PlansTitleContainer>
 
       <CreditCardArea>
         <CardNumberContainer>
           <CardProcessLabel>Numero do Cartão</CardProcessLabel>
           <CardUserInput
-        type="text"
-        id="numeroCartao"
-        name="numeroCartao"
-        placeholder="XXXX XXXX XXXX XXXX"
-        maxLength="16" //
+            type="text"
+            id="numeroCartao"
+            name="numeroCartao"
+            placeholder="XXXX XXXX XXXX XXXX"
+            maxLength="16" //
           ></CardUserInput>
         </CardNumberContainer>
         <CardNameContainer>
-        <CardProcessLabel>Nome impresso no cartão</CardProcessLabel>
+          <CardProcessLabel>Nome impresso no cartão</CardProcessLabel>
           <CardUserInput
             maxLength={16}
           ></CardUserInput>
         </CardNameContainer>
         <PlanUserPayment>
-          <PlanUserCreditCardTitle>Forma de pagamento</PlanUserCreditCardTitle>
-          <PlanUserCreditCardSelect 
-            placeholder="YYYY"
-          >
-            <option>2024</option>
-            <option>2025</option>
-            <option>2026</option>
-            <option>2027</option>
-          </PlanUserCreditCardSelect>
+          <InputWrapper>
+            <PlanUserCreditCardTitle>CVV</PlanUserCreditCardTitle>
+            <CvvInput
+              maxLength={3}
+            ></CvvInput>
+          </InputWrapper>
+          <InfContainers>
+            <InputWrapper>
+              <PlanUserCreditCardTitle>Validade</PlanUserCreditCardTitle>
+              <CvvInput
+                maxLength={16}
+              ></CvvInput>
+            </InputWrapper>
+
+            <PlanUserCreditCardSelect
+            > <option disabled selected>YYYY</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+              <option>2031</option>
+              <option>2032</option>
+            </PlanUserCreditCardSelect>
+          </InfContainers>
         </PlanUserPayment>
-        <PlanUserPaymentPortion>
-          <PlanUserPortionOption
-            placeholder="1x de R$ 299,90"
-          >
-            <option>1x de R$ 299,90</option>
-            <option>2x de R$ 199,90</option>
-            <option>3x de R$ 99,90</option>
-            <option>4x de R$ 59,90</option>
-            <option>5x de R$ 29,90</option>
-          </PlanUserPortionOption>
-          <CvvOption
-            placeholder="1x de R$ 299,90"
-          >
-            <option>1x de R$ 299,90</option>
-            <option>2x de R$ 199,90</option>
-            <option>3x de R$ 99,90</option>
-            <option>4x de R$ 59,90</option>
-            <option>5x de R$ 29,90</option>
-          </CvvOption>
-        </PlanUserPaymentPortion>
-      <PlanConfirmBtn>Adicionar Cartão</PlanConfirmBtn>
+
+        <PlanConfirmBtn>Adicionar Cartão</PlanConfirmBtn>
       </CreditCardArea>
+      
+      <Footer/>
     </>
 
   );
