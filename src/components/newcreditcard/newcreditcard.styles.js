@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 export const PlansTitle = styled.h2`
   text-align:center;
-  padding-top:40px;
+  padding:40px;
+  border: solid 2px black;
+  width:15%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 `;
 
-export const PlansSubtitle = styled.h6`
-  text-align:center;
-  min-width:30%;
-  width:30%;
-  max-width:30%;
-  margin:0 auto;
+export const PlansTitleContainer = styled.div`
+width:100%
 `;
-
 
 export const CreditCardArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0px;
+  justify-content: center;
+  margin-bottom: 150px;
 `;
 export const CardNumberContainer = styled.div`
   display: flex;
@@ -33,11 +34,21 @@ export const CardProcessLabel = styled.label`
 `;
 
 export const CardUserInput = styled.input`
-  width:120%;
+  width:100%;
   height:30px;
   border-radius:5px;
   border:1px solid grey;
   padding-left:10px;
+`;
+
+
+export const CvvInput = styled.input`
+
+  height:30px;
+  border-radius:5px;
+  border:1px solid grey;
+  padding-left:10px;
+  width: 90%;
 `;
 
 export const CardNameContainer = styled.div`
@@ -50,10 +61,10 @@ export const CardNameContainer = styled.div`
 
 export const PlanUserPayment = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   align-items:flex-start;
-  padding:10px 0px;
-  width:30%;
+  justify-content: space-between;
+  gap: 30px;
 `;
 
 export const PlanUserCreditCardTitle = styled.label`
@@ -61,25 +72,30 @@ export const PlanUserCreditCardTitle = styled.label`
 `;
 
 export const PlanUserCreditCardSelect = styled.select`
-  min-width:120%;
-  height:30px;
+  height:34px;
   border-radius:5px;
   background-color: transparent;
   border:1px solid grey;
   cursor: pointer;
+  padding-left:10px;
+  background-color:white;
 `;
 
-export const PlanUserPaymentPortion = styled.div`
+export const InfContainers = styled.div`
   display: flex;
-  flex-direction:column;
-  align-items:flex-start;
-  padding:10px 0px;
-  width:30%;
+  align-items: flex-end;
+  gap: 8px;
+  
 
 `;
 
-export const PlanUserPortionOption = styled.select`
-  min-width:120%;
+export const InputWrapper = styled.div`
+display: flex;
+flex-direction: column;
+
+`;
+
+export const PlanUserPortionOption = styled.text`
   height:30px;
   border-radius:5px;
   border:1px solid grey;
@@ -87,8 +103,8 @@ export const PlanUserPortionOption = styled.select`
   cursor: pointer;
 `;
 
-export const CvvOption = styled.select`
-  min-width:120%;
+export const CvvOption = styled.text`
+  
   height:30px;
   border-radius:5px;
   border:1px solid grey;
